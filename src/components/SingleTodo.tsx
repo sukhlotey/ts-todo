@@ -33,11 +33,9 @@ const SingleTodo: React.FC<Props> = ({ index, todo, todos, setTodos }) => {
   const handleStartStop = () => {
     setIsTiming(!isTiming);
     if (!isTiming) {
-      // Start timer
-      // No need to update server yet
+
     } else {
-      // Stop timer
-      updateTimer(todo.id, elapsedTime); // Update timer on server
+      updateTimer(todo.id, elapsedTime); 
     }
   };
 
